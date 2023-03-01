@@ -10,3 +10,11 @@ title: Home
     <p>Now to get busy with scaffolding out the site .... Somewhere for the Journal, and a way to create pages for her books</p>
     <p>All very exciting ....</p>
     <p>but first .... a wine :D</p>
+
+    <ul>
+        {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+    </ul>

@@ -1,5 +1,5 @@
 ---
-layout: journal
+layout: page
 title: An experimental post from admin
 date: 2023-03-01T16:34:16.978Z
 thumbnail: https://via.placeholder.com/350x150
