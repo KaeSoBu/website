@@ -9,5 +9,18 @@
     <h1>Hello World!</h1>
     <h2>Testing Git</h2>
     <h3>Adding a staging branch</h3>
+    <footer>
+      <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+      </script>
+    </footer>
   </body>
 </html>
