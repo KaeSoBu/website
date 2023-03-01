@@ -1,3 +1,6 @@
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Home</title>
+<title>{{ site.title }} | {% if page.title %}{{ page.title }}{% endif %}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
+<meta
+  name="description"
+  content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />

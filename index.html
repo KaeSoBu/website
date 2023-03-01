@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  </head>
-  <body>
+---
+layout: page
+title: Home
+---
+
     <h1>Hello World!</h1>
     <h2>Testing Git</h2>
     <h3>Adding a staging branch</h3>
@@ -13,18 +10,3 @@
     <p>Now to get busy with scaffolding out the site .... Somewhere for the Journal, and a way to create pages for her books</p>
     <p>All very exciting ....</p>
     <p>but first .... a wine :D</p>
-    <footer>
-      <script>
-        if (window.netlifyIdentity) {
-          window.netlifyIdentity.on("init", user => {
-            if (!user) {
-              window.netlifyIdentity.on("login", () => {
-                document.location.href = "/admin/";
-              });
-            }
-          });
-        }
-      </script>
-    </footer>
-  </body>
-</html>
