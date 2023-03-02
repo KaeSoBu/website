@@ -1,5 +1,6 @@
 ---
 layout: page
+category: journal
 title: Trying again
 date: 2023-03-01T19:38:42.781Z
 thumbnail: https://via.placeholder.com/350x150

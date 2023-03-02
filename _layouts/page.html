@@ -4,9 +4,16 @@
     {% include head/meta.html %}
     {% include head/css.html %}
     {% include head/scripts.html %}
-
   </head>
   <body>
+    <header>
+      <h1>This is the header</h1>
+      <ul>
+        {% for page in site.data.navigation %}
+        <li><a href="{{ page.url }}">{{ page.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </header>
     {{ content }}
     <hr>
     <p><strong>The name of this page is '{{ page.title }}'</strong></p>
