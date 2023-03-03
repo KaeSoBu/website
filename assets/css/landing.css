@@ -1,0 +1,25 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    /*background-color: blue;*/
+}
+
+.flex-item  {
+    flex: 0 45%;
+    margin: 1em;
+    align-self: baseline;
+    /*background-color: aquamarine;*/
+}
+
+.primary {
+    background-color: whitesmoke;
+}
+
+.is-high {
+    min-height: 50vh;
+    min-width: 40vw;
+}
