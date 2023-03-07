@@ -1,8 +1,0 @@
-- name: Home
-  url: /
-- name: Journal
-  url: /journal
-- name: Books
-  url: /books
-- name: About
-  url: /about
