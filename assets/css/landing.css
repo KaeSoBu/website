@@ -1,25 +1,9 @@
-.flex-container {
+body {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: space-around;
-    /*background-color: blue;*/
-}
+    min-height: 100vh;
+    flex-direction: column;
+  }
 
-.flex-item  {
-    flex: 0 45%;
-    margin: 1em;
-    align-self: baseline;
-    /*background-color: aquamarine;*/
-}
-
-.primary {
-    background-color: whitesmoke;
-}
-
-.is-high {
-    min-height: 50vh;
-    /*min-width: 40vw;*/
-}
+  main {
+    flex: 1 0 auto;
+  }

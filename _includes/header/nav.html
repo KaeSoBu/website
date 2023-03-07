@@ -1,0 +1,10 @@
+<div>
+    <!-- Navigation from _data/navigation.yml -->
+    <nav>
+        <ul>
+            {% for page in site.data.navigation %}
+            <li><a href="{{ page.url }}">{{ page.name }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+</div>

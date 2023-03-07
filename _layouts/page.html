@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-GB">
   <head>
+    <!-- Use includes in here to ensure consistency -->
     {% include head/meta.html %}
     {% include head/css.html %}
     {% include head/scripts.html %}
   </head>
   <body>
     <header>
-      <h1>This is the header</h1>
-      <ul>
-        {% for page in site.data.navigation %}
-        <li><a href="{{ page.url }}">{{ page.name }}</a></li>
-        {% endfor %}
-      </ul>
+      <!-- Use includes - all pages require a similar header -->
+      {% include header/main-header.html %}
     </header>
-    {{ content }}
+    <main>
+      <!-- Main page content -->
+      {{ content }}
+    </main>
     <hr>
     <p><strong>The name of this page is '{{ page.title }}'</strong></p>
     <footer>
