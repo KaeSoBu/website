@@ -1,4 +1,6 @@
 ---
+pagination: 
+  enabled: true
 ---
 
 <!-- This goes at the top of every page -->
@@ -35,8 +37,8 @@
 
   <!-- Add your site or application content here -->
   <p>Hello world! This is HTML5 Boilerplate.</p>
-
-  {% for posts in site.posts %}
+  <hr>
+  {% for post in site.posts %}
   <p>{{ post.title }}</p>
   {% endfor %}
 

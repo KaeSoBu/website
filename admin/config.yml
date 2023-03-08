@@ -17,5 +17,6 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "journal"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Category", name: "category", widget: "select", options: ["writing", "progress", "artwork", "life"]}
       #- {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
