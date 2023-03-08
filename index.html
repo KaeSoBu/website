@@ -39,7 +39,7 @@ pagination:
   <p>Hello world! This is HTML5 Boilerplate.</p>
   <hr>
   {% for post in site.posts %}
-  <p>{{ post.title }}</p>
+  <a href="{{ post.url }}">{{ post.title }}</a>
   {% endfor %}
 
 <!-- Required for Netlify CMS access -->

@@ -5,7 +5,7 @@ site-email: kaesobu@gmail.com
 web-email: kaesobu@googlemail.com
 
 # Site settings
-permalink: /:year/:month/:title
+permalink: /:categories/:year/:month/:title
 
 plugins:
   - jekyll-paginate-v2
