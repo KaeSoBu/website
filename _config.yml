@@ -1,0 +1,20 @@
+# Site info
+title: Kae So Bu
+description: Kae So Bu - independent novelist and short story writer of LGBTQ+ and Boyslove romantic fiction
+site-email: kaesobu@gmail.com
+web-email: kaesobu@googlemail.com
+
+# Site settings
+permalink: /:year/:month/:title
+
+plugins:
+  - jekyll-paginate-v2
+
+
+# Pagination settings
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: '/page/:num'
+  title: ':title - page :num of :max'
+  limit: 0
