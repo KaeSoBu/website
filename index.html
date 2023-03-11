@@ -6,9 +6,15 @@ title: Home
   <p>Hello World.</p>
   <p>I'm Kae So Bu</p>
   <hr>
-  {% for post in site.posts %}
-  <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.category }} - {{ post.date }}
-  {% endfor %}
+  <p>A list of Journal posts, limited to most recent 3</p>
+  <ul>
+   {% for post in site.posts | limit: 3 %}
+   <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.category }} - {{ post.date }}</li> 
+   {% endfor %}
+  </ul>
+  
+  
+  
 
 <!-- Required for Netlify CMS access -->
   <script>
