@@ -5,16 +5,15 @@ site-email: kaesobu@gmail.com
 web-email: kaesobu@googlemail.com
 
 # Site settings
-permalink: /:categories/:year/:month/:title
+permalink: /journal/:year/:month/:title
 
 plugins:
-  - jekyll-paginate-v2
+  - jekyll-paginate
 
+paginate: 2
+paginate_path: "/journal/page:num/"
 
-# Pagination settings
-pagination:
-  enabled: true
-  per_page: 3
-  permalink: '/page/:num'
-  title: ':title - page :num of :max'
-  limit: 0
+# Handling Books
+collections:
+  books:
+    output: true

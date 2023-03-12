@@ -8,7 +8,7 @@ title: Home
   <hr>
   <p>A list of Journal posts, limited to most recent 3</p>
   <ul>
-   {% for post in site.posts | limit: 3 %}
+   {% for post in site.posts limit: 3 %}
    <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.category }} - {{ post.date }}</li> 
    {% endfor %}
   </ul>

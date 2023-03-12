@@ -1,5 +1,5 @@
 ---
-layout: journal
+layout: post
 title: A first post from NetlifyCMS
 date: 2023-03-08T09:36:22.848Z
 category: progress

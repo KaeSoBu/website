@@ -1,5 +1,5 @@
 ---
-layout: journal
+layout: post
 title: Enough to test pagination
 date: 2023-03-11T07:18:24.545Z
 category: progress

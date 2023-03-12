@@ -1,5 +1,5 @@
 ---
-layout: journal
+layout: post
 title: Check The Netlify Slug Works
 date: 2023-03-11T07:34:10.745Z
 category: progress

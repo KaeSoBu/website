@@ -1,5 +1,5 @@
 ---
-layout: journal
+layout: post
 title: A Second Post
 date: 2023-03-11T07:08:38.325Z
 category: writing
