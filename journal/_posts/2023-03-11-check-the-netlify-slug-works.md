@@ -3,6 +3,7 @@ layout: post
 title: Check The Netlify Slug Works
 date: 2023-03-11T07:34:10.745Z
 category: progress
+excerpt: This is just a wee teaser ... Make me want to read more
 ---
 # J﻿ust checking ...
 
