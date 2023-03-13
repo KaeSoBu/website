@@ -3,6 +3,7 @@ layout: post
 title: Enough to test pagination
 date: 2023-03-11T07:18:24.545Z
 category: progress
+excerpt: This is just a wee teaser ... Make me want to read more
 ---
 # P﻿agination Test
 
