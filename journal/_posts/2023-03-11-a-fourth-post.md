@@ -2,7 +2,8 @@
 layout: post
 title: A Fourth Post
 date: 2023-03-11T07:15:32.774Z
-category: life
+category: life & other stuff
+excerpt: This is just a wee teaser ... Make me want to read more
 ---
 # E﻿nough with the Gibberish
 
