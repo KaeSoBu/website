@@ -3,5 +3,28 @@
 <head>
 {% include /head/meta.html %}
 {% include /head/og.html %}
+{% include /head/css.html %}
+{% if page.title == "Home" %}
+{% include /head/scripts.html %}
+{% endif %}
 </head>
-<body>{{ content }}</body>
+<body>
+    {{ content }}
+
+    {% if page.title == "Home" %}
+    <!-- Required for Netlify CMS access -->
+    <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+    </script>
+    {% endif %}
+
+</body>
+</html>

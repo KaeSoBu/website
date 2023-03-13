@@ -2,32 +2,25 @@
 layout: page
 title: Home
 ---
-<body>
-  <p>Hello World.</p>
-  <p>I'm Kae So Bu</p>
-  <hr>
-  <p>A list of Journal posts, limited to most recent 3</p>
-  <ul>
+<section class="hero is-primary">
+  <div class="hero-body">
+    <p class="title">
+      Hello World
+    </p>
+    <p class="subtitle">
+      I'm Kae So Bu
+    </p>
+  </div>
+</section>
+<section class="columns is-centered">
+  <div class="column is-one-fifth"></div>
+  <div class="column">
+    <h1 class="title is-5">A list of Journal posts, limited to most recent 3</h1>
+  </div>
+  <div class="column is-one-fifth"></div>
+</section>
+  <ul class="columns is-centered">
    {% for post in site.posts limit: 3 %}
    <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.category }} - {{ post.date }}</li> 
    {% endfor %}
   </ul>
-  
-  
-  
-
-<!-- Required for Netlify CMS access -->
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
-</body>
-
-</html>
