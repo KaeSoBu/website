@@ -3,6 +3,7 @@ layout: post
 title: A Third Post
 date: 2023-03-11T07:11:26.949Z
 category: artwork
+excerpt: This is just a wee teaser ... Make me want to read more
 ---
 # M﻿ore Gibberish
 
