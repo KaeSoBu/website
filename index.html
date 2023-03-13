@@ -12,15 +12,13 @@ title: Home
     </p>
   </div>
 </section>
-<section class="columns is-centered">
-  <div class="column is-one-fifth"></div>
-  <div class="column">
+<section class="section">
     <h1 class="title is-5">A list of Journal posts, limited to most recent 3</h1>
-  </div>
-  <div class="column is-one-fifth"></div>
-</section>
+</section class="section">
+<section class="section">
   <ul class="columns is-centered">
-   {% for post in site.posts limit: 3 %}
-   <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.category }} - {{ post.date }}</li> 
-   {% endfor %}
-  </ul>
+    {% for post in site.posts limit: 3 %}
+    <li class="column tile"><a href="{{ post.url }}">{{ post.title }}</a></li> 
+    {% endfor %}
+  </ul> 
+</section>
