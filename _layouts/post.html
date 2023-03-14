@@ -1,5 +1,16 @@
 ---
 layout: page
 ---
-<h1>A Journal Entry</h1>
-{{ content }}
+<section class="section">
+<div class="">
+    <h1 class="title">{{ page.title }}</h1>
+</div>
+<div class="section">
+    <h1 class="title is-size-4">{{ page.excerpt }}</h1>
+</div>
+</section>
+<section class="section">
+    <div class="container">
+        {{ content }}
+    </div>
+</section>
