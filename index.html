@@ -2,24 +2,46 @@
 layout: page
 title: Home
 ---
-<section class="hero is-primary">
-  <div class="hero-body">
-    <p class="title">
-      Hello World
-    </p>
-    <p class="subtitle">
-      I'm Kae So Bu
-    </p>
+<section class="section">
+  <div class="columns">
+    <div class="column">
+      <h3 class="title is-size-4">Sign up now for my Newsletter</h3>
+      <p>Be first to read all my exciting news, enter exclusive member only competitions and win prizes beyond your wildest dreams</p>
+    </div>
+    <div class="column">
+    <form name="contact" method="POST" data-netlify="true">
+    
+      <div class="field">
+        <label class="label">Name</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="e.g Alex Smith">
+        </div>
+      </div>
+    
+    
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="field has-addons">
+          <div class="control">
+            <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+          </div>
+          <div class="control">
+            <button class="button is-dark" type="submit">Send</button>
+          </div>
+        </div>
+      </div>
+    
+    </form>
+    </div>
   </div>
 </section>
 <section class="section">
-    <h1 class="title is-5">A list of Journal posts, limited to most recent 3</h1>
-</section>
-<section class="section">
-  <ul class="columns">
+  <div class="columns">
     {% for post in site.posts limit: 3 %}
-    <li class=""><a href="{{ post.url }}">{{ post.title }}</a></li>
-    <li class="">{{ post.excerpt }}</li>
+    <div class="column">
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt }}</p>
+    </div>
     {% endfor %}
-  </ul> 
+  </div>
 </section>
