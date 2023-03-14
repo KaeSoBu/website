@@ -2,7 +2,23 @@
 layout: page
 title: Home
 ---
-<section class="section">
+<section id="sign-up-form" class="section">
+  <form name="sign-up" method="POST" data-netlify="true">
+    <p>
+      <label>Your Name: <input type="text" name="name" /></label>
+    </p>
+    <p>
+      <label>Your Email: <input type="email" name="email" /></label>
+    </p>
+    <p>
+      <button type="submit">Send</button>
+    </p>
+  </form>
+</section><!-- end of form -->
+
+
+
+<section id="sign-up-form" class="section">
   <div class="columns">
     <div class="column">
       <h3 class="title is-size-4">Sign up now for my Newsletter</h3>
@@ -34,7 +50,7 @@ title: Home
     </form>
     </div>
   </div>
-</section>
+</section><!-- end of form -->
 <section class="section">
   <div class="columns">
     {% for post in site.posts limit: 3 %}

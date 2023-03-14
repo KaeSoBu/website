@@ -5,17 +5,17 @@
 {% include /head/og.html %}
 {% include /head/css.html %}
 {% if page.title == "Home" %}
-{% include /head/scripts.html %}
+  {% include /head/scripts.html %}
 {% endif %}
 </head>
 <body>
   {% include /header/banner.html %}
     {{ content }}
 
-    {% if page.title == "Home" %}
+  {% if page.title == "Home" %}
     <!-- Required for Netlify CMS access -->
     <script>
-        if (window.netlifyIdentity) {
+      if (window.netlifyIdentity) {
           window.netlifyIdentity.on("init", user => {
             if (!user) {
               window.netlifyIdentity.on("login", () => {
@@ -27,5 +27,6 @@
     </script>
     {% endif %}
 
+  <footer>This page was last updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}</footer>
 </body>
 </html>
