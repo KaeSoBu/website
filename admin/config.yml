@@ -26,3 +26,17 @@ collections:
       - {label: "Category", name: "category", widget: "select", options: ["writing", "progress", "artwork", "life & other stuff"]}
       - {label: "Featured Image", name: "featured-image", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "books"
+    label: "Books"
+    folder: "_books"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Quote", name: "quote", widget: "text"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Cover Image", name: "cover-image", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      
