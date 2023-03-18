@@ -1,5 +1,9 @@
 <header>
+  {% if page.layout == "page" %}
     <section class="hero is-primary">
+  {% else %}
+    <section class="hero is-small is-primary">
+  {% endif %}
         <div class="hero-body">
           <p class="title">
             Hello World
