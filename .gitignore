@@ -6,6 +6,4 @@ _site/
 .bundle/
 vendor/
 # Ignore npm packages
-package.json
-package-lock.json
 node_modules
