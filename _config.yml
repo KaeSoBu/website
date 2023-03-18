@@ -13,7 +13,7 @@ permalink: /journal/:year/:month/:title
 plugins:
   - jekyll-paginate
 
-paginate: 2
+paginate: 4
 paginate_path: "/journal/page:num/"
 
 # Handling Books
