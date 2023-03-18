@@ -5,6 +5,9 @@ site-email: kaesobu@gmail.com
 web-email: kaesobu@googlemail.com
 
 # Site settings
+sass:
+    sass_dir: _sass
+
 permalink: /journal/:year/:month/:title
 
 plugins:
