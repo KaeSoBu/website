@@ -34,6 +34,19 @@ title: Home
 </section><!-- end of form -->
 
 <section class="section">
+  <h1 class="title">My Latest Book</h1>
+  <div class="columns">
+    {% for book in site.books limit: 3 %}
+    <div class="column">
+      <h2><a href="{{ book.url }}">{{ book.title }}</a></h2>
+      <p>{{ post.excerpt }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section">
+  <h1 class="title">Latest Journal Entries</h1>
   <div class="columns">
     {% for post in site.posts limit: 3 %}
     <div class="column">
