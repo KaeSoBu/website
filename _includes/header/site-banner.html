@@ -1,27 +1,16 @@
 <header>
-  {% if page.layout == "page" %}
-    <section class="hero is-primary">
-  {% else %}
-    <section class="hero is-small is-primary">
-  {% endif %}
-        <div class="hero-body">
-          <div class="image">
-            <img src="https://ucarecdn.com/36539c8b-377e-4680-b625-15aa6aa8308d/" alt="">
-          </div>
-        </div>
-        <!-- Keep out of Master until Launch -->
-        <div class="hero-foot">
-          <nav class="tabs">
-            <div class="container">
-              <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/books/">Books</a></li>
-                <li><a href="/journal/index.html">Journal</a></li>
-                <li><a href="/journal/index.html">Contact</a></li>
-              </ul>
-            </div>
-          </nav> 
-        </div>
-    </section>
+  <section class="hero is-primary">
+    <div class="hero-body">
+    <!-- Responsive images in here -->
+    </div>
+  </section>
+  <nav class="tabs is-centered has-background-primary">
+    <ul>
+      <li {% if page.title == "Home" %} class="is-active" {% endif %}><a href="/index.html" class="has-text-white">Home</a></li>
+      <li {% if page.title == "About" %} class="is-active" {% endif %}><a href="/about.html" class="has-text-white">About</a></li>
+      <li {% if page.title == "Books" %} class="is-active" {% endif %}><a href="/books/index.html" class="has-text-white">Books</a></li>
+      <li {% if page.title == "Journal" %} class="is-active" {% endif %}><a href="/journal/index.html" class="has-text-white">Journal</a></li>
+      <li {% if page.title == "Contact" %} class="is-active" {% endif %}><a href="/contact.html" class="has-text-white">Contact</a></li>
+    </ul>
+  </nav>
 </header>
