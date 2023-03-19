@@ -5,4 +5,8 @@ layout: page
 
 ## Links to your books
 
-A new form ... like the 'Sign Up' form, but with the option to leave a message
+Add another page for "Get in Touch"
+
+... "Keep in touch" and "Get in Touch"
+
+Use Social Media for comments and feedback
