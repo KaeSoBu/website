@@ -2,23 +2,23 @@
 layout: page
 title: Home
 ---
-<section id="sign-up-form" class="section">
+<section id="sign-up-form" class="section has-background-primary has-text-white">
   <div class="columns">
     <div class="column">
-      <h3 class="title is-size-4">Sign up now for my Newsletter</h3>
+      <h3 class="title is-size-4 has-text-white">Sign up now for my Newsletter</h3>
       <p>Be first to read all my exciting news, enter exclusive member only competitions and win prizes beyond your wildest dreams</p>
     </div>
     
     <div class="column">
       <form name="sign-up" method="POST" data-netlify="true">
         <div class="field">
-          <label class="label">Name</label>
+          <label class="label has-text-white">Name</label>
           <div class="control">
             <input class="input" type="text" name="name" placeholder="What do you want me to call you?">
           </div>
         </div>
         <div class="field">
-          <label class="label">Email</label>
+          <label class="label has-text-white">Email</label>
           <div class="field has-addons">
             <div class="control">
               <input class="input" type="email" name="email" placeholder="e.g. alexsmith@gmail.com">
@@ -32,27 +32,26 @@ title: Home
     </form>
   </div>
 </section><!-- end of form -->
-<!-- Keep out of Master until Launch 
-<section class="section">
-  <h1 class="title">My Latest Book</h1>
+<section class="section has-background-primary">
+  <h1 class="title has-text-white">My Latest Book</h1>
   <div class="columns">
     {% for book in site.books limit: 3 %}
     <div class="column">
-      <h2><a href="{{ book.url }}">{{ book.title }}</a></h2>
+      <h2><a class="has-text-white" href="{{ book.url }}">{{ book.title }}</a></h2>
       <p>{{ post.excerpt }}</p>
     </div>
     {% endfor %}
   </div>
 </section>
 
-<section class="section">
-  <h1 class="title">Latest Journal Entries</h1>
+<section class="section has-background-primary">
+  <h1 class="title has-text-white">Latest Journal Entries</h1>
   <div class="columns">
     {% for post in site.posts limit: 3 %}
     <div class="column">
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p>{{ post.excerpt }}</p>
+      <h2><a class="has-text-white" href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="has-text-white">{{ post.excerpt }}</p>
     </div>
     {% endfor %}
   </div>
-</section>  /keep out of Master until Launch-->
+</section>
