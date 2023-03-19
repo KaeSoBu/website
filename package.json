@@ -1,0 +1,22 @@
+{
+  "name": "kaesobu",
+  "version": "1.0.0",
+  "description": "Bulma Sass files",
+  "main": "_sass/styles.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaeSoBu/website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaeSoBu/website/issues"
+  },
+  "homepage": "https://github.com/KaeSoBu/website#readme",
+  "devDependencies": {
+    "bulma": "^0.9.4"
+  }
+}

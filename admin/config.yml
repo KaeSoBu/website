@@ -5,7 +5,10 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: "images/uploads"
+media_library:
+  name: uploadcare
+  config:
+    publicKey: 4b286cb18cb92f1e4abf
 
 collections:
   - name: "journal"
@@ -16,8 +19,24 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Quote", name: "quote", widget: "text"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Category", name: "category", widget: "select", options: ["writing", "progress", "artwork", "life & other stuff"]}
-      #- {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Featured Image", name: "featured-image", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "books"
+    label: "Books"
+    folder: "_books"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Quote", name: "quote", widget: "text"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Cover Image", name: "cover-image", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      
