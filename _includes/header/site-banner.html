@@ -1,16 +1,26 @@
 <header>
-  <section class="hero is-primary">
+  {% include /header/nav-bar.html %}
+  <section id="site-header" class="hero is-small is-primary">
     <div class="hero-body">
-    <!-- Responsive images in here -->
+    <figure class="image">
+      <img src="https://ucarecdn.com/80911e18-96b0-43d2-9c97-e5b524f2a1cb/" alt="">
+    </figure>
     </div>
   </section>
-  <nav class="tabs is-centered has-background-primary">
-    <ul>
-      <li {% if page.title == "Home" %} class="is-active" {% endif %}><a href="/index.html" class="has-text-white">Home</a></li>
-      <li {% if page.title == "About" %} class="is-active" {% endif %}><a href="/about.html" class="has-text-white">About</a></li>
-      <li {% if page.title == "Books" %} class="is-active" {% endif %}><a href="/books/index.html" class="has-text-white">Books</a></li>
-      <li {% if page.title == "Journal" %} class="is-active" {% endif %}><a href="/journal/index.html" class="has-text-white">Journal</a></li>
-      <li {% if page.title == "Contact" %} class="is-active" {% endif %}><a href="/contact.html" class="has-text-white">Contact</a></li>
-    </ul>
-  </nav>
+  <section id="page-header" class="hero is-small is-primary">
+    <!--<div class="hero-body"> -->
+    <figure class="image">
+      {% if page.title == "Home" %}
+      <img src="https://ucarecdn.com/f326180e-48f4-43f2-86a4-5a878f566caf/" alt="">
+      {% elsif page.title == "Books" %}
+      <img src="https://ucarecdn.com/f326180e-48f4-43f2-86a4-5a878f566caf/" alt="">
+      {% elsif page.title == "Journal" %}
+      <img src="https://ucarecdn.com/d84767d5-36d6-4a05-80aa-c3082b404c02/" alt="">
+      {% else %}
+      <img src="https://ucarecdn.com/d84767d5-36d6-4a05-80aa-c3082b404c02/" alt="">
+      {% endif %}
+    </figure>
+    <!--</div> -->
+  </section>
+  
 </header>

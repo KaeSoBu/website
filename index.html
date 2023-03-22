@@ -2,43 +2,19 @@
 layout: page
 title: Home
 ---
-<section id="sign-up-form" class="section has-background-primary has-text-white">
-  <div class="columns">
-    <div class="column">
-      <h3 class="title is-size-4 has-text-white">Sign up now for my Newsletter</h3>
-      <p>Be first to read all my exciting news, enter exclusive member only competitions and win prizes beyond your wildest dreams</p>
-    </div>
-    
-    <div class="column">
-      <form name="sign-up" method="POST" data-netlify="true">
-        <div class="field">
-          <label class="label has-text-white">Name</label>
-          <div class="control">
-            <input class="input" type="text" name="name" placeholder="What do you want me to call you?">
-          </div>
-        </div>
-        <div class="field">
-          <label class="label has-text-white">Email</label>
-          <div class="field has-addons">
-            <div class="control">
-              <input class="input" type="email" name="email" placeholder="e.g. alexsmith@gmail.com">
-            </div>
-            <div class="control">
-              <button class="button is-dark" type="submit">Send</button>
-            </div>
-          </div>
-        </div>
-    </div>
-    </form>
-  </div>
-</section><!-- end of form -->
+{% include sign-up-large.html %}
 <section class="section has-background-primary">
   <h1 class="title has-text-white">My Latest Book</h1>
   <div class="columns">
-    {% for book in site.books limit: 3 %}
+    {% for book in site.books limit: 1 %}
+    <div class="column is-one-third">
+      <a class="has-text-white" href="{{ book.url }}">
+      <img src="https://ucarecdn.com/da0e0a6b-2ec7-47b7-917f-21550465eb7c/" alt="">
+      </a>
+    </div>
     <div class="column">
       <h2><a class="has-text-white" href="{{ book.url }}">{{ book.title }}</a></h2>
-      <p>{{ post.excerpt }}</p>
+      <p>{{ site.books.description }}</p>
     </div>
     {% endfor %}
   </div>
