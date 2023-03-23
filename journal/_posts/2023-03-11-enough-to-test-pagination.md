@@ -1,9 +1,12 @@
 ---
 layout: post
 title: Enough to test pagination
+description: A brief description for Search engines to pick up
+excerpt: This is just a wee teaser ... Make me want to read more
+quote: A favourite bit of your post you'd like to draw attention to
 date: 2023-03-11T07:18:24.545Z
 category: progress
-excerpt: This is just a wee teaser ... Make me want to read more
+featured-image: https://ucarecdn.com/3f08e48b-1002-4ed3-b4ea-ac9f3f3ec61a/
 ---
 # P﻿agination Test
 
