@@ -1,0 +1,17 @@
+<section class="section has-background-primary">
+    <h1 class="title has-text-white">My Latest Book</h1>
+    <div class="columns">
+      {% for book in site.books limit: 1 %}
+      <div class="column is-one-third">
+        <a class="has-text-white" href="{{ book.url }}">
+        <img src="https://ucarecdn.com/da0e0a6b-2ec7-47b7-917f-21550465eb7c/" alt="">
+        </a>
+      </div>
+      <div class="column">
+        <h2><a class=" title has-text-white" href="{{ book.url }}">{{ book.title }}</a></h2>
+        <p class="section is-size-4 has-text-white">{{ book.description }}</p>
+        <p class="section is-size-4 has-text-white">{{ book.review }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>

@@ -1,7 +1,8 @@
 ---
 layout: page
 title: "The Gardens of Yes and No"
-description: " Ohhhh, loads of exciting stuff about the book, maybe a brief synopsis, maybe some reviews , in reality, I'm just trying to make a text height match an image height"
+description: " Ohhhh, loads of exciting stuff about the book, maybe a brief synopsis, maybe some reviews, in reality, I'm just trying to make a text height match an image height. It depends on how big you want the book cover image to be I suppose, but I'm assuming it needs to be as big as this?"
+review: "I started reading it and couldn't put it down - Buy it now and print it out before Kae So Bu breaks the Internet!"
 ---
 #The Gardens of Yes and No
 

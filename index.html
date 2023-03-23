@@ -3,30 +3,41 @@ layout: page
 title: Home
 ---
 {% include sign-up-large.html %}
-<section class="section has-background-primary">
-  <h1 class="title has-text-white">My Latest Book</h1>
-  <div class="columns">
-    {% for book in site.books limit: 1 %}
-    <div class="column is-one-third">
-      <a class="has-text-white" href="{{ book.url }}">
-      <img src="https://ucarecdn.com/da0e0a6b-2ec7-47b7-917f-21550465eb7c/" alt="">
-      </a>
-    </div>
-    <div class="column">
-      <h2><a class="has-text-white" href="{{ book.url }}">{{ book.title }}</a></h2>
-      <p>{{ site.books.description }}</p>
-    </div>
-    {% endfor %}
-  </div>
-</section>
+{% include book-blurb.html %}
+
 
 <section class="section has-background-primary">
   <h1 class="title has-text-white">Latest Journal Entries</h1>
-  <div class="columns">
-    {% for post in site.posts limit: 3 %}
+  <div class="section columns">
+    {% for post in site.posts limit: 1 %}
     <div class="column">
-      <h2><a class="has-text-white" href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p class="has-text-white">{{ post.excerpt }}</p>
+      <h2><a class="title has-text-white" href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="section has-text-white">{{ post.excerpt }}</p>
+    </div>
+    <div class="column">
+      <img src="{{ post.featured-image }}" alt="">
+    </div>
+    {% endfor %}
+  </div>
+  <div class="section columns">
+    {% for post in site.posts limit: 1 offset:1 %}
+        <div class="column">
+      <img src="{{ post.featured-image }}" alt="">
+    </div>
+    <div class="column">
+      <h2><a class="title has-text-white" href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="section has-text-white">{{ post.excerpt }}</p>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="section columns">
+    {% for post in site.posts limit: 1 offset:2 %}
+    <div class="column">
+      <h2><a class="title has-text-white" href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="section has-text-white">{{ post.excerpt }}</p>
+    </div>
+    <div class="column">
+      <img src="{{ post.featured-image }}" alt="">
     </div>
     {% endfor %}
   </div>
